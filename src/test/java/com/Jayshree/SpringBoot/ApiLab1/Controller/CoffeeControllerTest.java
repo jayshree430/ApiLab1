@@ -19,7 +19,7 @@ public class CoffeeControllerTest {
     public void testGetCoffee() throws Exception{
         String expectedString = "I like coffee!";
 
-        mockMvcController.perform(MockMvcRequestBuilders.get("/"))
+        mockMvcController.perform(MockMvcRequestBuilders.get("/coffeeLover"))
                 .andExpect(MockMvcResultMatchers.status().isOk())
                 .andExpect(MockMvcResultMatchers.content().string(expectedString));
     }
